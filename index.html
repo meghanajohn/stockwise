@@ -49,8 +49,8 @@ button {
   cursor: pointer;
   font-size: 14px;
 }
-.primary { background: var(--white); color: green; }
-.secondary { background: light green; color: var(--ink); border: 1px solid var(--line); }
+.primary { background: var(--green); color: white; }
+.secondary { background: green; color: var(--ink); border: 1px solid var(--line); }
 .danger { background: #90EE90; color: #c43f4b; padding: 8px 10px; }
 .panel {
   background: white;
@@ -112,7 +112,7 @@ td.amount { font-weight: 600; white-space: nowrap; }
   font-size: 21px;
   font-weight: 700;
 }
-.line.total strong { color: var(--green); }
+.line.total strong { color: var(--white); }
 .discount { width: 90px; padding: 7px; }
 .actions { display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap; }
 .notice { font-size: 13px; margin-top: 15px; min-height: 18px; }
@@ -343,7 +343,7 @@ document.getElementById("generate").addEventListener("click", () => {
 
   const receipt = document.getElementById("receipt");
   receipt.innerHTML = `
-    <h1>SizeSmart AI</h1>
+    <h1>Stockwise</h1>
     <p>Clothing Store — Customer Receipt</p>
     <hr>
     <p><strong>Bill number:</strong> ${safe(billNo)}</p>
