@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SizeSmart AI | Home</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f5fc;
+      color: #263451;
+    }
+
+    header {
+      background: white;
+      padding: 22px 7%;
+      border-bottom: 1px solid #e2e7f2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    header h1 span {
+      color: #4c68ed;
+    }
+
+    header p {
+      margin: 7px 0 0;
+      color: #71809a;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 75px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tag {
+      color: #4c68ed;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin: 15px 0 10px;
+    }
+
+    .intro {
+      color: #71809a;
+      line-height: 1.6;
+      margin-bottom: 38px;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+
+    .option {
+      background: white;
+      border: 1px solid #e1e6f2;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 10px 30px #293c6710;
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      background: #edf0ff;
+      margin-bottom: 20px;
+    }
+
+    .option h3 {
+      margin: 0 0 12px;
+      font-size: 21px;
+    }
+
+    .option p {
+      color: #71809a;
+      line-height: 1.6;
+      min-height: 50px;
+      font-size: 14px;
+    }
+
+    .option a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background: #4c68ed;
+      color: white;
+      padding: 14px;
+      margin-top: 22px;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    .option a:hover {
+      background: #354fd0;
+    }
+
+    .stock a {
+      background: #16866c;
+    }
+
+    .stock a:hover {
+      background: #106b56;
+    }
+
+    footer {
+      text-align: center;
+      color: #8a94a8;
+      font-size: 13px;
+      padding: 25px;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        margin: 35px auto;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>♧ SizeSmart <span>AI</span></h1>
+    <p>Smart Clothing Inventory Assistant</p>
+  </header>
+
+  <main>
+    <div class="tag">YOUR STORE DASHBOARD</div>
+
+    <h2>What would you like to do?</h2>
+
+    <p class="intro">
+      Manage customer billing and check your clothing stock
+      from one convenient place.
+    </p>
+
+    <div class="options">
+
+      <!-- OPTION 1: BILLING PAGE -->
+      <section class="option">
+        <div class="icon">🧾</div>
+        <h3>Create New Bill</h3>
+        <p>
+          Enter customer details, add clothing items,
+          calculate totals and generate a receipt.
+        </p>
+
+        <a href="./billing.html">Create New Bill →</a>
+      </section>
+
+      <!-- OPTION 2: STOCK PAGE -->
+      <section class="option stock">
+        <div class="icon">📦</div>
+        <h3>Show Stock Data</h3>
+        <p>
+          View clothing products, sizes, available quantities
+          and prices in your stock database.
+        </p>
+
+        <a href="./stock.html">Show Stock Data →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    SizeSmart AI · Clothing Inventory Management
+  </footer>
+
+</body>
+</html>
